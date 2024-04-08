@@ -1,0 +1,48 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "company": "American Express",
+            "type": "Platinum",
+            "travel_cashback": 5,
+            "grocery_cashback": 0,
+            "dining_cashback": 0,
+            "gas_cashback": 0,
+            "streaming_cashback": 0,
+            "drugstore_cashback": 0
+        },
+        {
+            "id": 2,
+            "company": "Discover",
+            "type": "It",
+            "travel_cashback": 1,
+            "grocery_cashback": 1,
+            "dining_cashback": 5,
+            "gas_cashback": 1,
+            "streaming_cashback": 1,
+            "drugstore_cashback": 5
+        },
+        {
+            "id": 3,
+            "company": "Chase",
+            "type": "Freedom Flex",
+            "travel_cashback": 5,
+            "grocery_cashback": 5,
+            "dining_cashback": 3,
+            "gas_cashback": 5,
+            "streaming_cashback": 1,
+            "drugstore_cashback": 3
+        },
+        {
+            "id": 4,
+            "company": "Wells Fargo",
+            "type": "Active Cash Card",
+            "travel_cashback": 2,
+            "grocery_cashback": 2,
+            "dining_cashback": 2,
+            "gas_cashback": 2,
+            "streaming_cashback": 2,
+            "drugstore_cashback": 2
+        }
+    ]
+}

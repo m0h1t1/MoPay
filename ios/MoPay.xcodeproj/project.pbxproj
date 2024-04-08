@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MoPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MoPayTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-MoPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MoPay.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-MoPay-MoPayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MoPay-MoPayTests.a */; };
+		33836459570E0BBE74173E43 /* libPods-MoPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7F199C68494C53666F20DD /* libPods-MoPay.a */; };
+		7C8BBEDB2B524E2800813AF9 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBEC82B524E2800813AF9 /* Fontisto.ttf */; };
+		7C8BBEDC2B524E2800813AF9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBEC92B524E2800813AF9 /* Octicons.ttf */; };
+		7C8BBEDD2B524E2800813AF9 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECA2B524E2800813AF9 /* Feather.ttf */; };
+		7C8BBEDE2B524E2800813AF9 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECB2B524E2800813AF9 /* FontAwesome6_Regular.ttf */; };
+		7C8BBEDF2B524E2800813AF9 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECC2B524E2800813AF9 /* Entypo.ttf */; };
+		7C8BBEE02B524E2800813AF9 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECD2B524E2800813AF9 /* FontAwesome5_Brands.ttf */; };
+		7C8BBEE12B524E2800813AF9 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECE2B524E2800813AF9 /* MaterialCommunityIcons.ttf */; };
+		7C8BBEE22B524E2800813AF9 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBECF2B524E2800813AF9 /* AntDesign.ttf */; };
+		7C8BBEE32B524E2800813AF9 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED02B524E2800813AF9 /* Foundation.ttf */; };
+		7C8BBEE42B524E2800813AF9 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED12B524E2800813AF9 /* Ionicons.ttf */; };
+		7C8BBEE52B524E2800813AF9 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED22B524E2800813AF9 /* FontAwesome5_Solid.ttf */; };
+		7C8BBEE62B524E2800813AF9 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED32B524E2800813AF9 /* FontAwesome5_Regular.ttf */; };
+		7C8BBEE72B524E2800813AF9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED42B524E2800813AF9 /* FontAwesome.ttf */; };
+		7C8BBEE82B524E2800813AF9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED52B524E2800813AF9 /* Zocial.ttf */; };
+		7C8BBEE92B524E2800813AF9 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED62B524E2800813AF9 /* EvilIcons.ttf */; };
+		7C8BBEEA2B524E2800813AF9 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED72B524E2800813AF9 /* FontAwesome6_Solid.ttf */; };
+		7C8BBEEB2B524E2800813AF9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED82B524E2800813AF9 /* SimpleLineIcons.ttf */; };
+		7C8BBEEC2B524E2800813AF9 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBED92B524E2800813AF9 /* FontAwesome6_Brands.ttf */; };
+		7C8BBEED2B524E2800813AF9 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8BBEDA2B524E2800813AF9 /* MaterialIcons.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +54,30 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MoPay/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MoPay/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MoPay/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MoPay-MoPayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPay-MoPayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-MoPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay.debug.xcconfig"; path = "Target Support Files/Pods-MoPay/Pods-MoPay.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-MoPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay.release.xcconfig"; path = "Target Support Files/Pods-MoPay/Pods-MoPay.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-MoPay-MoPayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay-MoPayTests.debug.xcconfig"; path = "Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-MoPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8BBEC82B524E2800813AF9 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		7C8BBEC92B524E2800813AF9 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		7C8BBECA2B524E2800813AF9 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		7C8BBECB2B524E2800813AF9 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		7C8BBECC2B524E2800813AF9 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		7C8BBECD2B524E2800813AF9 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		7C8BBECE2B524E2800813AF9 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		7C8BBECF2B524E2800813AF9 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		7C8BBED02B524E2800813AF9 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		7C8BBED12B524E2800813AF9 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		7C8BBED22B524E2800813AF9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		7C8BBED32B524E2800813AF9 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		7C8BBED42B524E2800813AF9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		7C8BBED52B524E2800813AF9 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		7C8BBED62B524E2800813AF9 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		7C8BBED72B524E2800813AF9 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		7C8BBED82B524E2800813AF9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		7C8BBED92B524E2800813AF9 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		7C8BBEDA2B524E2800813AF9 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MoPay/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-MoPay-MoPayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay-MoPayTests.release.xcconfig"; path = "Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF7F199C68494C53666F20DD /* libPods-MoPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20240060E8EC20556507FA3 /* Pods-MoPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay.debug.xcconfig"; path = "Target Support Files/Pods-MoPay/Pods-MoPay.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F2730EE028A88A6D6A157037 /* Pods-MoPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoPay.release.xcconfig"; path = "Target Support Files/Pods-MoPay/Pods-MoPay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-MoPay-MoPayTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-MoPay.a in Frameworks */,
+				33836459570E0BBE74173E43 /* libPods-MoPay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +133,36 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-MoPay.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-MoPay-MoPayTests.a */,
+				AF7F199C68494C53666F20DD /* libPods-MoPay.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C8BBEC72B524E2800813AF9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C8BBEC82B524E2800813AF9 /* Fontisto.ttf */,
+				7C8BBEC92B524E2800813AF9 /* Octicons.ttf */,
+				7C8BBECA2B524E2800813AF9 /* Feather.ttf */,
+				7C8BBECB2B524E2800813AF9 /* FontAwesome6_Regular.ttf */,
+				7C8BBECC2B524E2800813AF9 /* Entypo.ttf */,
+				7C8BBECD2B524E2800813AF9 /* FontAwesome5_Brands.ttf */,
+				7C8BBECE2B524E2800813AF9 /* MaterialCommunityIcons.ttf */,
+				7C8BBECF2B524E2800813AF9 /* AntDesign.ttf */,
+				7C8BBED02B524E2800813AF9 /* Foundation.ttf */,
+				7C8BBED12B524E2800813AF9 /* Ionicons.ttf */,
+				7C8BBED22B524E2800813AF9 /* FontAwesome5_Solid.ttf */,
+				7C8BBED32B524E2800813AF9 /* FontAwesome5_Regular.ttf */,
+				7C8BBED42B524E2800813AF9 /* FontAwesome.ttf */,
+				7C8BBED52B524E2800813AF9 /* Zocial.ttf */,
+				7C8BBED62B524E2800813AF9 /* EvilIcons.ttf */,
+				7C8BBED72B524E2800813AF9 /* FontAwesome6_Solid.ttf */,
+				7C8BBED82B524E2800813AF9 /* SimpleLineIcons.ttf */,
+				7C8BBED92B524E2800813AF9 /* FontAwesome6_Brands.ttf */,
+				7C8BBEDA2B524E2800813AF9 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -116,6 +175,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7C8BBEC72B524E2800813AF9 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* MoPay */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MoPayTests */,
@@ -140,10 +200,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-MoPay.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-MoPay.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-MoPay-MoPayTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-MoPay-MoPayTests.release.xcconfig */,
+				C20240060E8EC20556507FA3 /* Pods-MoPay.debug.xcconfig */,
+				F2730EE028A88A6D6A157037 /* Pods-MoPay.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +213,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MoPayTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,13 +231,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MoPay" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				34872D67D6DEE32DF08DBCEE /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				5E9AA5D4C31B694C5568C095 /* [CP] Embed Pods Frameworks */,
+				4DBA37A6A7B514B5DFEFAAC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +254,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -241,8 +297,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8BBEE62B524E2800813AF9 /* FontAwesome5_Regular.ttf in Resources */,
+				7C8BBEDB2B524E2800813AF9 /* Fontisto.ttf in Resources */,
+				7C8BBEE02B524E2800813AF9 /* FontAwesome5_Brands.ttf in Resources */,
+				7C8BBEE42B524E2800813AF9 /* Ionicons.ttf in Resources */,
+				7C8BBEE52B524E2800813AF9 /* FontAwesome5_Solid.ttf in Resources */,
+				7C8BBEDF2B524E2800813AF9 /* Entypo.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				7C8BBEE22B524E2800813AF9 /* AntDesign.ttf in Resources */,
+				7C8BBEE82B524E2800813AF9 /* Zocial.ttf in Resources */,
+				7C8BBEE32B524E2800813AF9 /* Foundation.ttf in Resources */,
+				7C8BBEEC2B524E2800813AF9 /* FontAwesome6_Brands.ttf in Resources */,
+				7C8BBEDD2B524E2800813AF9 /* Feather.ttf in Resources */,
+				7C8BBEEB2B524E2800813AF9 /* SimpleLineIcons.ttf in Resources */,
+				7C8BBEE92B524E2800813AF9 /* EvilIcons.ttf in Resources */,
+				7C8BBEDC2B524E2800813AF9 /* Octicons.ttf in Resources */,
+				7C8BBEE72B524E2800813AF9 /* FontAwesome.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7C8BBEE12B524E2800813AF9 /* MaterialCommunityIcons.ttf in Resources */,
+				7C8BBEEA2B524E2800813AF9 /* FontAwesome6_Solid.ttf in Resources */,
+				7C8BBEDE2B524E2800813AF9 /* FontAwesome6_Regular.ttf in Resources */,
+				7C8BBEED2B524E2800813AF9 /* MaterialIcons.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,46 +340,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoPay-MoPayTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		34872D67D6DEE32DF08DBCEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,24 +362,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		4DBA37A6A7B514B5DFEFAAC8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,21 +379,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		5E9AA5D4C31B694C5568C095 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoPay-MoPayTests/Pods-MoPay-MoPayTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoPay/Pods-MoPay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +429,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-MoPay-MoPayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -437,7 +455,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-MoPay-MoPayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -461,13 +478,17 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-MoPay.debug.xcconfig */;
+			baseConfigurationReference = C20240060E8EC20556507FA3 /* Pods-MoPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79QZ7C35YS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MoPay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoPay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +500,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = mopay;
 				PRODUCT_NAME = MoPay;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -488,12 +510,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-MoPay.release.xcconfig */;
+			baseConfigurationReference = F2730EE028A88A6D6A157037 /* Pods-MoPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79QZ7C35YS;
 				INFOPLIST_FILE = MoPay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoPay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +531,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = mopay;
 				PRODUCT_NAME = MoPay;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -544,6 +571,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -624,6 +652,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
