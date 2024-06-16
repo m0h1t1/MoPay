@@ -1,29 +1,32 @@
 import HomeScreen from './screens/HomeScreen'
-import NewCardScreen from './screens/NewCardScreen'
+import AddCardScreen from './screens/AddCardScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import CardInfoScreen from './screens/CardInfoScreen'
 import BestCardScreen from './screens/BestCardScreen'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
 
-import { Text, StyleSheet, View, Image } from 'react-native'
+import DataUpload from './components/dataUpload'
+
+import { StyleSheet } from 'react-native'
 
 import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import { Icon } from 'react-native-elements'
-import { UserProvider } from './UserContext'
+import { UserContext, UserProvider } from './UserContext'
+import { useContext } from 'react'
 
-const Stack = createNativeStackNavigator()
+//const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
 const MainStack = createStackNavigator()
-const HomeStack = createStackNavigator();
-const ProfileStack = createStackNavigator();
+const HomeStack = createStackNavigator()
+//const ProfileStack = createStackNavigator()
+//const AuthStack = createStackNavigator()
 
 
-function HomeStacks() {
+/*function HomeStacks() {
 	return (
 		<Stack.Navigator
 			screenOptions={{
@@ -35,7 +38,7 @@ function HomeStacks() {
 			<Stack.Screen name="Best" component={BestCardScreen} />
 		</Stack.Navigator>
 	)
-}
+}*/
 
 function MainStackNavigator() {
   return (
@@ -44,27 +47,37 @@ function MainStackNavigator() {
       <MainStack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}/>
       <MainStack.Screen name="Main" component={MainTabNavigator} options={{ headerShown: false }} />
     </MainStack.Navigator>
-  );
+  )
 }
 
 function MainTabNavigator() {
 	return (
 			<Tab.Navigator
-					initialRouteName='HomeStack'
+					initialRouteName='Home'
 					screenOptions={({ route }) => ({
 							tabBarIcon: ({ focused, color, size }) => {
 									let iconName
-									if (route.name === 'HomeStack') {
-											iconName = focused ? 'home' : 'home'
-									} else if (route.name === 'ProfileStack') {
-											iconName = focused ? 'list' : 'list'
+									if (route.name === 'Home') {
+										iconName = focused ? 'home' : 'home'
+									} else if (route.name === 'Profile') {
+										iconName = focused ? 'person' : 'person'
+									} else if (route.name === 'Add Card') {
+										iconName = focused ? 'add' : 'add'
 									}
 									return <Icon name={iconName} size={size} color={color} />
 							},
+							tabBarStyle: {
+								paddingTop: 10,
+								paddingBottom: 25,
+							},
+							tabBarLabelStyle: {
+								fontSize: 12
+							}
 					})}
 			>
-					<Tab.Screen name='HomeStack' component={HomeStackScreen} options={{ headerShown: false }} />
-					<Tab.Screen name='ProfileStack' component={ProfileStackScreen} options={{ headerShown: false }} />
+					<Tab.Screen name='Home' component={HomeStackScreen} options={{ headerShown: false }} />
+					<Tab.Screen name='Add Card' component={AddCardScreen} options={{ headerShown: false }} />
+					<Tab.Screen name='Profile' component={ProfileScreen} options={{ headerShown: false }} />
 			</Tab.Navigator>
 	);
 }
@@ -72,27 +85,39 @@ function MainTabNavigator() {
 function HomeStackScreen() {
 	return (
 		<HomeStack.Navigator>
-			<HomeStack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+			<HomeStack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
 			<HomeStack.Screen name="Best" component={BestCardScreen} options={{ headerShown: false }} />
 			<HomeStack.Screen name="Info" component={CardInfoScreen} options={{ headerShown: false }} />
 		</HomeStack.Navigator>
 	);
 }
-
+/*
 function ProfileStackScreen() {
 	return (
 		<ProfileStack.Navigator>
-			<ProfileStack.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
+			<ProfileStack.Screen name="ProfileScreen" component={ProfileScreen} options={{ headerShown: false }} />
 			<ProfileStack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
 		</ProfileStack.Navigator>
-	);
+	)
 }
 
+function AuthNavigator() {
+	return (
+		<AuthStack.Navigator>
+			<AuthStack.Screen name="Login" component={ProfileScreen} options={{ headerShown: false }} />
+			<AuthStack.Screen name="Register" component={LoginScreen} options={{ headerShown: false }} />
+		</AuthStack.Navigator>
+	)
+}*/
+
 export default function App() {
+	const { user } = useContext(UserContext)
+
   return (
+		//<DataUpload />
 		<UserProvider>
 			<NavigationContainer>
-				<MainStackNavigator />
+				{user ? <MainTabNavigator /> : <MainStackNavigator />}
 			</NavigationContainer>
 		</UserProvider>
   )
@@ -106,6 +131,6 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	footerIcon: {
-		width: 22,
+		width: 20,
 	}
 })

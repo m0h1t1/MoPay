@@ -17,7 +17,7 @@ const CardInfoScreen = ({ route }) => {
 	const navigation = useNavigation()
 
 	const handleBackPress = () => {
-		navigation.navigate('Initial')
+		navigation.goBack()
 	}
 
 	const getimage = (id) => {

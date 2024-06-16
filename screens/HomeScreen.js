@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { StyleSheet, View, Text, Image, TextInput, SafeAreaView, ScrollView, TouchableOpacity, Touchable, } from 'react-native'
 import { Icon } from 'react-native-elements'
-import { useNavigation } from '@react-navigation/native'
+import { UserContext } from '../UserContext'
+
 
 //Card Images
 const card1 = require("/Users/mobuckets/MoPay/dataset/amexplatinumCard.png")
@@ -12,6 +13,7 @@ const card4 = require("/Users/mobuckets/MoPay/dataset/wfactivecashcardCard.png")
 import data from '/Users/mobuckets/MoPay/dataset/cards.json'
 
 const HomeScreen = ({ navigation }) => {
+	const { user } = useContext(UserContext)
 	const [cards, setCards] = useState(data.cards)
 	const [filteredCards, setFilteredCards] = useState(data.cards)
 
@@ -52,7 +54,7 @@ const HomeScreen = ({ navigation }) => {
 		<SafeAreaView style={styles.safeArea}>
 			<View style={styles.container}>
 				<View style={styles.headerSection}>
-					<Text style={styles.title}>Credit Cards</Text>
+					<Text style={styles.title}>Welcome, {user ? user.username : ''}</Text>
 				</View>
 
 				<View style={styles.searchSection}>
@@ -192,7 +194,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		paddingLeft: 35,
-		paddingRight: 35
+		paddingRight: 35,
 		
 	},
 	addIconStyle: {

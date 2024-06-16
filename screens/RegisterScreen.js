@@ -1,7 +1,7 @@
 // RegisterScreen.js
 import React, { useState } from 'react'  
-import { View, TextInput, Button, Text, StyleSheet, Alert, ImageBackground } from 'react-native'  
-import axios from 'axios'  
+import { View, TextInput, Button, Text, StyleSheet, Alert, TouchableOpacity } from 'react-native'  
+import { API_BASE_URL } from './config'
 
 const RegisterScreen = ({ navigation }) => {
   const [username, setUsername] = useState('')  
@@ -15,57 +15,63 @@ const RegisterScreen = ({ navigation }) => {
     return re.test(email)  
   }  
 
-  const handleRegister = () => {
+  const handleRegister = async () => {
     // Simple validation
-    if (!username || !password || !confirmPassword || !email || !phone) {
-      Alert.alert('Error', 'Please fill all fields')
-      return
-    }
-    if (password !== confirmPassword) {
-      Alert.alert('Error', 'Passwords do not match')
-      return
-    }
-    if (!validateEmail(email)) {
-      Alert.alert('Error', 'Invalid email format')
-      return
-    }
+    try {
+      console.log('inside handle register try')
+      if (!username || !password || !confirmPassword || !email || !phone) {
+        Alert.alert('Error', 'Please fill all fields')
+        return
+      }
+      if (password !== confirmPassword) {
+        Alert.alert('Error', 'Passwords do not match')
+        return
+      }
+      if (!validateEmail(email)) {
+        Alert.alert('Error', 'Invalid email format')
+        return
+      }
 
-    // Proceed with registration logic
-     axios.post('http://localhost:3000/auth/register', { username, password, email, phone }, {timeout:5000})
-       .then(response => {
-         // Handle response
-         navigation.navigate('Login')
-       }) /*
-       .catch(error => {
-         // Handle registration error
-         console.log('Registration error:', username, password, email, phone)  
-       })*/
-       .catch(error => {
-        if (error.response) {
-          // The request was made, but the server responded with an error status
-          console.log('Registration failed:', error.response.status, error.response.data);
-          Alert.alert('Error', 'Registration failed. Please try again later.');
-        } else if (error.request) {
-          // The request was made, but no response was received
-          console.log('No response received:', error.request);
-          Alert.alert('Error', 'No response received. Please check your internet connection.');
-        } else {
-          // Something happened in setting up the request that triggered an Error
-          console.log('Error setting up the request:', error.message);
-          Alert.alert('Error', 'An unexpected error occurred. Please try again later.');
-        }
-      }) 
+      // Proceed with registration logic
+      console.log('inside handle register', username, password, email, phone)
+      const response = await fetch(`${API_BASE_URL}/auth/register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type' : 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          password,
+          email,
+          phone
+        }),
+      })
 
-    console.log('Registration data:', username, password, email, phone)  
-  }  
+      if (!response.ok) {
+        throw new Error('Registration failed')
+      } 
 
-  return (
+      setUsername('')
+      setPassword('')
+      setConfirmPassword('')
+      setEmail('')
+      setPhone('')
+
+      Alert.alert('Success', 'Registration successful. You can now log in.', [
+        { text: 'OK', onPress: () => navigation.navigate('Login') },
+      ])
+    } catch (error) {
+      Alert.alert('Error', error.message)
+    }
+  }
+
+  /*return (
     <View style={styles.container}>
         <View style={styles.inputContainer}>
-        <Text style={{ fontSize: 18 }}>User Registration {"\n"}</Text>
+        <Text style={{ fontSize: 20 }}>User Registration {"\n"}</Text>
           <TextInput
               style={styles.input}
-              placeholder="Username"
+              placeholder="Name"
               value={username}
               onChangeText={setUsername}
               autoCapitalize="none" 
@@ -76,6 +82,7 @@ const RegisterScreen = ({ navigation }) => {
               secureTextEntry
               value={password}
               onChangeText={setPassword}
+              autoCapitalize="none" 
           />
           <TextInput
               style={styles.input}
@@ -83,6 +90,7 @@ const RegisterScreen = ({ navigation }) => {
               secureTextEntry
               value={confirmPassword}
               onChangeText={setConfirmPassword}
+              autoCapitalize="none" 
           />
           <TextInput
               style={styles.input}
@@ -90,6 +98,7 @@ const RegisterScreen = ({ navigation }) => {
               value={email}
               onChangeText={setEmail}
               keyboardType="email-address"
+              autoCapitalize="none" 
           />
           <TextInput
               style={styles.input}
@@ -97,6 +106,7 @@ const RegisterScreen = ({ navigation }) => {
               value={phone}
               onChangeText={setPhone}
               keyboardType="phone-pad"
+              autoCapitalize="none" 
           />
           <Button title="Register" onPress={handleRegister} />
           <Button title="Back to Login" onPress={() => navigation.navigate('Login')} />
@@ -111,6 +121,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     //padding: 20,
+    backgroundColor: '#e6e6ff'
   },
   inputContainer: {
     flex: 1,
@@ -141,6 +152,103 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginTop: 5,
   },
-})  
+})  */
+return (
+  <View style={styles.container}>
+    <View style={styles.inputContainer}>
+      <Text style={styles.title}>User Registration</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Name"
+        value={username}
+        onChangeText={setUsername}
+        autoCapitalize="none"
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Confirm Password"
+        value={confirmPassword}
+        onChangeText={setConfirmPassword}
+        secureTextEntry
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Phone Number"
+        value={phone}
+        onChangeText={setPhone}
+        keyboardType="phone-pad"
+        autoCapitalize="none"
+      />
+      <TouchableOpacity style={styles.registerButton} onPress={handleRegister}>
+        <Text style={styles.buttonText}>Register</Text>
+      </TouchableOpacity>
+    </View>
+    <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+      <Text style={styles.backloginbutton}>Back to Login</Text>
+    </TouchableOpacity>
+  </View>
+);
+};
+
+const styles = StyleSheet.create({
+container: {
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#e6e6ff',
+},
+title: {
+  fontSize: 20,
+  fontWeight: 'bold',
+  marginBottom: 20,
+  color: '#492E5A'
+},
+inputContainer: {
+  width: '80%',
+  backgroundColor: '#fff',
+  padding: 20,
+  borderRadius: 10,
+  elevation: 2,
+},
+input: {
+  height: 40,
+  borderColor: '#815E96',
+  borderWidth: 1,
+  borderRadius: 5,
+  marginBottom: 20,
+  paddingHorizontal: 10,
+},
+registerButton: {
+  backgroundColor: '#815E96',
+  borderRadius: 5,
+  paddingVertical: 12,
+  alignItems: 'center',
+},
+buttonText: {
+  color: '#fff',
+  fontSize: 16,
+  fontWeight: 'bold',
+},
+backloginbutton: {
+  marginTop: 15,
+  color: '#5886FF',
+  fontWeight: 'bold'
+}
+});
 
 export default RegisterScreen  

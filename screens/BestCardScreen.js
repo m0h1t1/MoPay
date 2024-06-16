@@ -17,7 +17,7 @@ const BestCardScreen = ({ route }) => {
 	const navigation = useNavigation()
 
 	const handleBackPress = () => {
-        navigation.goBack();
+        navigation.goBack()
 	}
 
 	const getimage = (id) => {

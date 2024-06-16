@@ -1,38 +1,18 @@
-/*import React, { createContext, useState } from 'react';
-
-const UserContext = createContext();
-
-const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(null); // Modify this line to include the entire user object
-
-  return (
-    <UserContext.Provider value={{ user, setUser }}>
-      {children}
-    </UserContext.Provider>
-  );
-};
-
-const logout = () => {
-	setUser(null)
-}
-
-export { UserContext, UserProvider }; */
-
+import { useNavigation } from '@react-navigation/native';
 import React, { createContext, useState } from 'react';
 
 export const UserContext = createContext({});
 
 export const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null)
 
   const logout = () => {
-    setUser(null);
-  };
+    setUser(null)
+  }
 
   return (
     <UserContext.Provider value={{ user, setUser, logout }}>
       {children}
     </UserContext.Provider>
-  );
-};
-
+  )
+}
